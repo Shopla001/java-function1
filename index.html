@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <input type="text" name="" id="input">
+    <div id="display"></div>
+    <button onclick="show()">Show</button>
+
+    <script>
+        function show(){
+            let userinput = document.getElementById('input').value
+            let displayArea = document.getElementById('display')
+            // displayArea.innerHTML = userInput
+            displayArea.innerHTML += `<p> ${userinput}</p>`
+            document.getElementById('input').value = ''
+        }
+    </script>
+</body>
+</html>
